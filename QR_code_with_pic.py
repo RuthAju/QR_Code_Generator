@@ -1,36 +1,3 @@
-# # Import necessary libraries
-# import qrcode
-# from PIL import Image
-
-# # Load the logo image
-# logo = Image.open(r"C:\Users\USER\Desktop\Data Engineering\calc_image\LF3.png")  # Load the logo image
-
-# # Create a QR code with high error correction level
-# qr_code = qrcode.QRCode(
-#     error_correction=qrcode.constants.ERROR_CORRECT_H  # Allows up to 30% damage tolerance
-# )
-
-# # Add the data (URL) to the QR code
-# qr_code.add_data("www.linkedin.com/in/ruthaju")  # Embed the URL
-# qr_code.make()  # Generate the QR code
-
-# # Customize the QR code colors and convert to RGBA format
-# img_qr_code = qr_code.make_image(fill_color="purple", back_color="white").convert('RGBA')
-
-# # Calculate the position to center the logo
-# logo_pos = (
-#     (img_qr_code.size[0] - logo.size[0]) // 2,  # Horizontal centering
-#     (img_qr_code.size[1] - logo.size[1]) // 2   # Vertical centering
-# )
-
-# # Paste the logo onto the QR code
-# img_qr_code.paste(logo, logo_pos)
-
-# # Save the final QR code with logo as an image file
-# img_qr_code.save(r"C:\Users\USER\Desktop\Data Engineering\QR_code\Qr_code.png")  # Save the image
-
-
-
 import qrcode
 from PIL import Image, ImageTk
 import tkinter as tk
